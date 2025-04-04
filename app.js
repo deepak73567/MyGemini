@@ -26,9 +26,7 @@ app.post('/getResponse', async (req, res) => {
 
     
 });
-app.get('*',(req,res)=>{
-  res.status(404).json({
-      msg:'bad request'
-  })
-})
+app.use((req, res) => {
+  res.status(404).json({ msg: 'Route not found' });
+});
 module.exports = app;
