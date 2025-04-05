@@ -9,7 +9,7 @@ const cors = require('cors');
 app.use(bodyParser.json());
 
 app.use(cors({
-  origin: 'https://my-gemini-eta-nine.vercel.app', // Your frontend URL
+  origin: '*', // Your frontend URL
   methods: ['GET', 'POST'],
   credentials: true
 }));
