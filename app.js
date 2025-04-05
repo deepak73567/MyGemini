@@ -6,7 +6,7 @@ const cors=require('cors')
 app.use(bodyParser.json());
 
 app.use(cors({
-  origin: 'https://my-gemini-eta-nine.vercel.app/getResponse', // Ya jo bhi tumhara frontend domain ho
+  origin: 'https://my-gemini-eta-nine.vercel.app', // Ya jo bhi tumhara frontend domain ho
   methods: ['GET', 'POST'],
   credentials: true // Agar cookies ya headers use kar rahe ho toh
 }));
